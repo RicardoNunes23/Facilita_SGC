@@ -122,7 +122,7 @@ clientsRoutes.post("/clients/rota-otimizada", async (request, response) => {
     }
 
     // Escolher o ponto de partida
-    const startingPoint = { coordenate_x: -15.818312, coordenate_y: -48.123094, name: "Ponto de Partida" };
+    const startingPoint = { coordenate_x: 0, coordenate_y: 0, name: "Ponto de Partida" };
 
     // Inserir o ponto de partida na lista de clientes
     clientes.unshift(startingPoint);
