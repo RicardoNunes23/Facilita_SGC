@@ -7,13 +7,11 @@ const NewClientForm = ({
   phoneValue,
   coordenate_xValue,
   coordenate_yValue,
-
   setInputValue,
   setEmailValue,
   setPhoneValue,
   setCoordenate_xValue,
   setCoordenate_yValue,
-
   selectedClient,
   editClient,
   createClient,
@@ -44,7 +42,6 @@ const NewClientForm = ({
     setCoordenate_xValue("");
     setCoordenate_yValue("");
 
-
     setIsEditing(false); // Desativa o modo de edição
     handleWithNewButton(); // Esconder o formulário
     if (typeof cancelForm === "function") {
@@ -61,7 +58,7 @@ const NewClientForm = ({
       console.error("Por favor, preencha todos os campos antes de salvar.");
       return;
     }
-  
+
     // Chama a função apropriada com base no modo de edição
     if (isEditing) {
       editClient();
@@ -75,6 +72,7 @@ const NewClientForm = ({
       <div
         style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
       >
+        {/* Inputs para os dados do cliente */}
         <input
           value={inputValue}
           style={{ display: inputVisibility ? "flex" : "none" }}
@@ -110,18 +108,19 @@ const NewClientForm = ({
           className="inputCoordenate_y"
           placeholder="Coordenada Y"
         />
-       <button
-        onClick={inputVisibility ? handleSave : handleWithNewButton}
-        className="newClientButton"
-      >
-        {inputVisibility ? (isEditing ? "Salvar" : "Cadastrar") : "+ Adicionar Cliente"}
-      </button>
-      <button
-        onClick={handleCancel}
-        className={inputVisibility ? "cancelButton" : ""}
-      >
-        {inputVisibility ? "Cancelar" : ""}
-      </button>
+        {/* Botões de ação */}
+        <button
+          onClick={inputVisibility ? handleSave : handleWithNewButton}
+          className="newClientButton"
+        >
+          {inputVisibility ? (isEditing ? "Salvar" : "Cadastrar") : "+ Adicionar Cliente"}
+        </button>
+        <button
+          onClick={handleCancel}
+          className={inputVisibility ? "cancelButton" : ""}
+        >
+          {inputVisibility ? "Cancelar" : ""}
+        </button>
       </div>
     </>
   );

@@ -1,4 +1,3 @@
-// src/components/MenuBar.js
 import React from "react";
 
 const MenuBar = () => {

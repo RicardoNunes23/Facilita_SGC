@@ -75,9 +75,9 @@ input:focus {
   background-color: #333;
   color: #fff;
   padding: 10px;
-  display: flex; 
-  justify-content:flex-end;
-  align-items: center; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .menu-bar p {
@@ -87,7 +87,7 @@ input:focus {
 }
 
 .menu-bar p:hover {
-  background-color: #555; 
+  background-color: #555;
 }
 
 .container {
