@@ -1,17 +1,17 @@
 const express = require("express");
-//const cors = require("cors");
-//const clientsRoutes = require("./clients.routes");
-//const { response } = require("express");
+const cors = require("cors");
+const clientsRoutes = require("./clients.routes");
+const { response } = require("express");
 const app = express();
 
 app.use(express.json());
-//app.use(cors());
-//app.use(clientsRoutes);
+app.use(cors());
+app.use(clientsRoutes);
 
-//function teste(request, response) {
-  //return response.json("oi");
-//}
-//app.get("/fffff", teste);
+function teste(request, response) {
+  return response.json("oi");
+}
+app.get("/fffff", teste);
 
 app.get("/health", (req, res) => {
   return res.json("up");
