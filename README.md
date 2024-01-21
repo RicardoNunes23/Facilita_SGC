@@ -124,8 +124,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Node.js](https://nodejs.org/en/) v20.11.0
 - [Postgress](https://www.prisma.io/) latest
 - [React](https://pt-br.reactjs.org/) v18.2.0
-- [Prisma](https://www.prisma.io/) v3.15.2
 - [Docker](https://www.docker.com/) v20.10.24
+- [Prisma](https://www.prisma.io/) v3.15.2
+- [Axios](https://axios-http.com/ptbr/docs/intro)
 - [GitHub](https://github.com/)
 - [VScode](https://code.visualstudio.com/)
 
